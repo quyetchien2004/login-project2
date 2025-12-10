@@ -14,5 +14,16 @@
     <input type="password" id="txtpassword" /><br><br>
 
     <button id="btnlogin">Đăng nhập</button>
+       <script>
+        document.getElementById("btnlogin").onclick = function () {
+            const u = txtUserName.value;
+            const p = txtpassword.value;
+            if(u === "admin" && p === "admin") {
+                alert("Đăng nhập thành công!");
+            } else {
+                alert("Sai tài khoản hoặc mật khẩu");
+            }
+        }
+    </script>
 </body>
 </html>

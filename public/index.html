@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+</head>
+<body>
+    <h2>Login</h2>
+
+    <label>Tên đăng nhập</label>
+    <input type="text" id="txtUserName" /><br><br>
+
+    <label>Mật khẩu</label>
+    <input type="password" id="txtpassword" /><br><br>
+
+
+    <button id="btnlogin">Login</button>
+       <script>
+        document.getElementById("btnlogin").onclick = function () {
+            const u = txtUserName.value;
+            const p = txtpassword.value;
+            if(u === "admin" && p === "admin") {
+                alert("Đăng nhập thành công!");
+            } else {
+                alert("Sai tài khoản hoặc mật khẩu");
+            }
+        }
+    </script>
+
+</body>
+</html>
